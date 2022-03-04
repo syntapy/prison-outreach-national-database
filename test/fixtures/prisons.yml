@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hkf_id: 
+  name: MyString
+  address: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  order_restrictions: MyString
+  shipping_restrictions: MyString
+  comment: MyString
+
+two:
+  hkf_id: 
+  name: MyString
+  address: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  order_restrictions: MyString
+  shipping_restrictions: MyString
+  comment: MyString

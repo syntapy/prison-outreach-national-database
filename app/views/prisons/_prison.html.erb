@@ -1,0 +1,57 @@
+<div id="<%= dom_id prison %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Hkf:</strong>
+    <%= prison.hkf_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= prison.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address:</strong>
+    <%= prison.address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address2:</strong>
+    <%= prison.address2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">City:</strong>
+    <%= prison.city %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">State:</strong>
+    <%= prison.state %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Zip:</strong>
+    <%= prison.zip %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Order restrictions:</strong>
+    <%= prison.order_restrictions %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Shipping restrictions:</strong>
+    <%= prison.shipping_restrictions %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Comment:</strong>
+    <%= prison.comment %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this prison", prison, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this prison', edit_prison_path(prison), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
