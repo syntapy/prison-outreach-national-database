@@ -1,0 +1,10 @@
+#!/bin/sh
+
+export APP_NAME="prison_outreach"
+export SRC="prison-outreach-national-database/"
+
+sudo docker container rm ${APP_NAME}
+sudo docker container rm ${APP_NAME}_container
+sudo docker build -t ${APP_NAME}_preinstall .
+sudo docker run --name ${APP_NAME}_container -p 3000:3000 -v $(pwd)/${SRC}:/${SRC} ${APP_NAME}_preinstall sh #-c "cd ${SRC}; bundle install"
+sudo docker commit ${APP_NAME}_container ${APP_NAME}

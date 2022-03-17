@@ -1,0 +1,6 @@
+#!/bin/sh
+
+APP_NAME="prison_outreach"
+export SRC="prison-outreach-national-database/"
+
+sudo docker run -it -p 3000:3000 -v $(pwd)/${SRC}:/${SRC} ${APP_NAME} sh -c "cd ${SRC}; rails server"
