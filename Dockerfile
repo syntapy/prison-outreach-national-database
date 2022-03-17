@@ -2,6 +2,7 @@ from ruby:2.7.4-alpine
 
 run apk add build-base; gem install rails
 run apk upgrade; apk add --no-cache git sqlite sqlite-dev tzdata
+run apk add postgresql-dev
 
 expose 3000
 
